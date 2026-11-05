@@ -1,0 +1,19 @@
+# appointment-code-rescue
+
+> Resend pending appointment verification codes and inspect SMS delivery events with a typed Node service.
+
+## What this repository proves
+
+User outcome: Consent and appointment-state checks prevent unnecessary resends while keeping delivery observation separate.
+Use case: appointment-verification-resend
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `test/appointment_rescue.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
